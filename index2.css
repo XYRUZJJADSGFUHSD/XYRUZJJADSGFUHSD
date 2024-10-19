@@ -1,0 +1,436 @@
+/*=====GOOGLE FONTS======*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+  }
+/*=================navbar styling==================*/
+
+/*=================WHOLE NAVBAR==================*/
+.navbar{ 
+    position: fixed;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 0;
+    transition: all .5s ease;
+    z-index: 999;
+    background: rgb(37, 10, 190);
+}
+
+/*=================NAVBAR LIST STYLE==================*/
+.navbar .menu li{ 
+    list-style: none;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+/*Profile*/
+.navbar .logo a{
+    font-size: 30px;
+    color:white;
+    font-weight: 600;
+}
+
+.navbar .logo a span{
+    color: rgb(192, 4, 4);
+    font-weight: 600;
+    font-size: 30px;
+}
+
+/*=================NAVBAR TEXT==================*/
+.navbar .menu li a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: crimson;
+    cursor: pointer;
+}
+
+ /*================NAVBAR TEXT POSITION==================*/
+ .navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}   
+
+/*================HOME STYLING==================*/
+.home{
+    display: flex;
+    height: 100vh;
+    color: black(0, 0, 0);
+    min-height: 500px;
+    font-family: 'Poppins', sans-serif;
+    background: url(images/bg-home.jpg) no-repeat center;
+
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .intro1, .intro3{
+    letter-spacing: 2.5px;
+}
+
+.home .home-content .intro1{
+    font-size: 27px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.home .home-content .intro2{
+    font-size: 75px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text{
+    color: #707070;
+    font-size: 20px;
+    width: 50%;
+    
+}
+
+.home .home-content .intro3{
+    font-size: 27px;
+    margin: 5px 0;
+    color: #070202;
+    font-weight: 500;
+}
+
+
+.home .home-content a{
+    display: inline-block;
+    background: rgb(153, 9, 9);
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-top: 25px;
+    border: 2px solid black;
+    transition: all .2s ease;
+}
+
+.home .home-content a:hover{
+    color: black;
+    background: none;
+    border: 2px solid black;
+    padding: 10px 30px;
+}
+
+.home .home-content a i{
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+/*================ABOUT STYLING==================*/
+.featured{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 100px;
+}
+.featured .container {
+    text-align: center;
+   
+}
+
+.featured .container .title{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+
+/*================My Hobby==================*/
+
+.latest .categories{
+    margin: 60px 0;
+    text-align: center;
+}
+
+.latest .categories .col-3 ul li{
+    list-style: none;
+    display: inline-block;
+    justify-content: space-between;
+    padding-left: 40px;
+}
+
+.latest .categories .col-3 ul li img{
+    width: 200px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.latest .categories .col-3 ul li img:hover{
+    transform: translateY(-4%);
+}
+
+.latest .categories .col-3 ul li h4{
+    text-align: left;
+}
+
+.latest .categories .col-3 ul li p{
+    text-align: left;
+}
+
+.latest .categories .col-3 .ratings ul li{
+    margin-left: -150px;
+    color: green;
+}
+
+.offer{
+    padding: 70px 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 80px 0;
+    background: rgb(99, 99, 99);
+    text-align: center;
+}
+.offer .box-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+.offer .box-content .left{
+    width: 45%;
+    margin-left: 100px;
+}
+.offer .box-content .left img{
+    width: 50%;
+    object-fit: cover;
+}
+.offer .box-content .right{
+    width: 35%;
+    margin-right: 100px;
+}
+
+.footer{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 150px;
+    background: rgb(25, 103, 167);
+    margin-top: 200px;
+  
+}
+.footer .footer-content{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer .footer-content h3 span{
+    color: crimson;
+}
+
+.footer .footer-content .socials li{
+    display: inline-block;
+    list-style: none;
+    margin-top: 5px;
+    letter-spacing: 20px;
+    font-size: 20px;
+}
+ /*=====================CONTACT========================-->*/
+ .contact__add{
+    font-family: 'Poppins', sans-serif;
+   }
+
+
+   .contact__dress{
+    font-family: 'Poppins', sans-serif;
+    color: #707070;
+   }
+    .latest{
+        
+        position:relative;
+        min-height: 70vh;
+        padding: 50px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+   
+    
+    }
+
+.section__title-contact{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+.section__subtitle-contact{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 46%;
+    margin-top: 67%;
+    color: #707070;
+}
+    .section__title-contact{
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        margin-top: 1.9%;
+        
+    }
+    .section__subtitle-contact{
+        font-family: 'Poppins', sans-serif;
+        margin-left: 46%;
+        margin-top: 67%;
+        color: #707070;
+    }
+    .menulist_skills-contact{
+        position: absolute;
+       margin-left: 54%;
+       margin-top: -4.5%;
+    }
+
+
+.logo__contact{
+    position: relative;
+    margin-top: 77%;
+    width: 50px;
+    cursor: pointer;
+    margin-left: 250px;
+    text-align: right; 
+    margin-left: 101px;
+}
+
+.container__contact{
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container__contact .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__contact .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    
+}
+.container__contact .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background:rgb(22, 0, 221) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    color: white;
+    
+
+}
+
+.container__contact .contactInfo .box .text{
+   
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactForm{
+    margin-left: 200px;
+    width: 55%;
+    padding: 40px;
+    background: white;
+
+}
+
+.contactForm .contact__add{
+    font-size: 30px;
+    color: rgb(5, 79, 129);
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 14px;
+    margin: 9.5px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #707070;
+    font-weight: 300;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+
+{
+    color: #a52a2a;
+    font-size: 12px;
+    transform: translateY(-20px);
+    font-weight: 500;
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
